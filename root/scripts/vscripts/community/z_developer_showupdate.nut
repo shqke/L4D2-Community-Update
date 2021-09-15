@@ -161,7 +161,11 @@ function ShowUpdateAll()
 
 function ShowUpdateOther()
 {
+<<<<<<< HEAD
 	ShowUpdate( "other" )
+=======
+	ShowUpdate( "nocoummunity" )
+>>>>>>> parent of c23d71c... Fix typo
 }
 
 // Call to create a logic_timer as 1/10th of a Think to start DebugRedraw(). This Timer
