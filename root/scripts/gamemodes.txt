@@ -4,7 +4,7 @@
 	{
 		"base"		"coop"
 		"maxplayers"	"4"
-		
+
 		"x360ctx"	"0"
 		"x360matchrule"		"0"
 		"x360presence"		"5"
@@ -21,7 +21,7 @@
 	"realism"
 	{
 		"base"		"realism"
-		"maxplayers"    "4"	// realism
+		"maxplayers"	"4"
 		"x360ctx"	"6"
 		"x360matchrule"		"0"
 		"x360presence"		"5"
@@ -39,13 +39,12 @@
 			z_use_next_difficulty_damage_factor 1
 			z_witch_always_kills 1
 		}
-
 	}
 
 	"survival"
 	{
 		"base"		"survival"
-		"maxplayers"    "4"	// survival
+		"maxplayers"	"4"
 		"x360ctx"	"3"
 		"x360matchrule"		"2"
 		"x360matchruleteam"	"3"
@@ -62,7 +61,7 @@
 	"versus"
 	{
 		"base"		"versus"
-		"maxplayers"    "8"	// versus
+		"maxplayers"	"8"
 		"x360ctx"	"1"
 		"x360matchrule"		"1"
 		"x360matchruleteam"	"3"
@@ -101,19 +100,19 @@
 			"z_jockey_ride_damage_interval" 0.5
 			"tank_burn_duration" 90
 			"z_witch_damage_per_kill_hit" 15
-			
+
 			// these are 360 only convar changes, if you prefix with 360_, they'll
 			// get set on 360 and dedicated for 360
 			"360_z_mega_mob_size" 25
 			"360_z_mob_spawn_max_size" 18
-			"360_z_versus_wandering_density" 0.026
+			"360_versus_wandering_zombie_density" 0.026
 		}
 	}
 
 	"scavenge"
 	{
 		"base"		"scavenge"
-		"maxplayers"    "8"	// scavenge
+		"maxplayers"	"8"
 		"x360ctx"	"4"
 		"x360matchrule"		"4"
 		"x360matchruleteam"	"5"
@@ -152,14 +151,14 @@
 			// get set on 360 and dedicated for 360
 			"360_z_mega_mob_size" 25
 			"360_z_mob_spawn_max_size" 18
-			"360_z_versus_wandering_density" 0.026
+			"360_versus_wandering_zombie_density" 0.026
 		}
 	}
 
 	"mutation1"
 	{
 		"base"		"coop"
-		"maxplayers"    "1"
+		"maxplayers"	"1"
 		"achievementindex"	"0"
 		"x360ctx"	"7"
 		"x360presence" 	"13"
@@ -180,7 +179,7 @@
 	"mutation2"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"1"
 		"x360ctx"	"8"
 		"dlcmask"	"0x0000000000000002"
@@ -192,24 +191,19 @@
 	"mutation3"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"2"
 		"x360ctx"	"9"
 		"dlcmask"	"0x0000000000000002"
 		"builtin"	"1"
 		"Author"	"Valve"
 		"Image"		"vgui/blog/bleed_out"
-
-		convar
-		{
-			pain_pills_decay_rate 0.27
-		}
 	}
 
 	"mutation4"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"3"
 		"x360ctx"	"10"
 		"dlcmask"	"0x0000000000000002"
@@ -221,7 +215,7 @@
 	"mutation5"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"4"
 		"x360ctx"	"11"
 		"dlcmask"	"0x0000000000000002"
@@ -230,7 +224,7 @@
 		"Image"		"vgui/blog/four_swordsmen"
 
 		convar
-		{ 
+		{
 			sb_melee_approach_victim 1
 			sv_infected_police_tonfa_probability 0
 			sv_infected_riot_control_tonfa_probability 0
@@ -240,7 +234,7 @@
 	"mutation7"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"6"
 		"x360ctx"	"13"
 		"dlcmask"	"0x0000000000000002"
@@ -249,7 +243,7 @@
 		"Image"		"vgui/blog/chainsaw_massacre"
 
 		convar
-		{ 
+		{
 			sb_melee_approach_victim 1
 			sv_infected_police_tonfa_probability 0
 			sv_infected_riot_control_tonfa_probability 0
@@ -258,8 +252,8 @@
 
 	"mutation8"
 	{
-		"base"		"coop"
-		"maxplayers"    "4"
+		"base"		"realism"
+		"maxplayers"	"4"
 		"achievementindex"	"7"
 		"x360ctx"	"14"
 		"dlcmask"	"0x0000000000000002"
@@ -270,20 +264,13 @@
 		convar
 		{
 			sv_permawipe 1
-			sv_disable_glow_survivors 1
-			sv_disable_glow_faritems 1
-			sv_rescue_disabled 1
-			z_non_head_damage_factor_multiplier 0.5
-			z_head_damage_causes_wounds 1
-			z_use_next_difficulty_damage_factor 1
-			z_witch_always_kills 1
 		}
 	}
 
 	"mutation9"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"8"
 		"x360ctx"	"15"
 		"dlcmask"	"0x0000000000000002"
@@ -295,7 +282,7 @@
 	"mutation10"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"9"
 		"x360ctx"	"16"
 		"x360presence"	"5"
@@ -312,7 +299,7 @@
 	"mutation11"
 	{
 		"base"		"versus"
-		"maxplayers"    "8"
+		"maxplayers"	"8"
 		"achievementindex"	"10"
 		"playercontrolledzombies"	"1"
 		"x360ctx"	"18"
@@ -320,18 +307,12 @@
 		"builtin"	"1"
 		"Author"	"Valve"
 		"Image"		"vgui/blog/healthpackalypse"
-
-		convar
-		{
-			"director_special_initial_spawn_delay_min" 2
-			"director_special_initial_spawn_delay_max" 10
-		}
 	}
 
 	"mutation12"
 	{
 		"base"		"versus"
-		"maxplayers"    "8"
+		"maxplayers"	"8"
 		"achievementindex"	"13"	// intentionally mis-numbered
 		"playercontrolledzombies"	"1"
 		"x360ctx"	"20"
@@ -348,16 +329,13 @@
 			z_head_damage_causes_wounds 1
 			z_use_next_difficulty_damage_factor 1
 			z_witch_always_kills 1
-			"director_special_initial_spawn_delay_min" 2
-			"director_special_initial_spawn_delay_max" 10
 		}
-
 	}
 
 	"mutation13"
 	{
 		"base"		"scavenge"
-		"maxplayers"    "8"
+		"maxplayers"	"8"
 		"achievementindex"	"12"
 		"playercontrolledzombies"	"1"
 		"x360ctx"	"22"
@@ -365,18 +343,12 @@
 		"builtin"	"1"
 		"Author"	"Valve"
 		"Image"		"vgui/blog/follow_the_liter"
-
-		convar
-		{
-			"director_special_initial_spawn_delay_min" 2
-			"director_special_initial_spawn_delay_max" 10
-		}
 	}
 
 	"mutation14"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"11"	// intentionally mis-numbered
 		"x360ctx"	"24"
 		"dlcmask"	"0x0000000000000002"
@@ -395,7 +367,7 @@
 	"mutation15"
 	{
 		"base"		"survival"
-		"maxplayers"    "8"
+		"maxplayers"	"8"
 		"achievementindex"	"14"
 		"playercontrolledzombies"	"1"
 		"x360ctx"	"28"
@@ -432,7 +404,7 @@
 	"mutation16"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"15"
 		"x360ctx"	"25"
 		"dlcmask"	"0x0000000000000002"
@@ -444,7 +416,7 @@
 	"mutation17"
 	{
 		"base"		"coop"
-		"maxplayers"    "1"
+		"maxplayers"	"1"
 		"achievementindex"	"16"
 		"x360ctx"	"17"
 		"dlcmask"	"0x0000000000000002"
@@ -462,7 +434,7 @@
 	"mutation18"
 	{
 		"base"		"versus"
-		"maxplayers"    "8"
+		"maxplayers"	"8"
 		"achievementindex"	"17"
 		"x360ctx"	"26"
 		"dlcmask"	"0x0000000000000002"
@@ -471,17 +443,12 @@
 		"Image"		"vgui/blog/bleed_out_versus"
 
 		"playercontrolledzombies"	"1"
-
-		convar
-		{
-			pain_pills_decay_rate 0.27
-		}
 	}
 
 	"mutation19"
 	{
 		"base"		"versus"
-		"maxplayers"    "8"
+		"maxplayers"	"8"
 		"achievementindex"	"18"
 		"playercontrolledzombies"	"1"
 		"x360ctx"	"30"
@@ -489,20 +456,20 @@
 		"builtin"	"1"
 		"Author"	"Valve"
 		"Image"		"vgui/blog/tank_tank_tank"
-		
+
 		convar
 		{
 			"z_spawn_safety_range" 600
 			"z_ghost_travel_distance" 2000
 			"z_tank_health" 2000
 			"z_frustration" 0
-		}		
+		}
 	}
 
 	"mutation20"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"19"
 		"x360ctx"	"31"
 		"dlcmask"	"0x0000000000000002"
@@ -511,10 +478,10 @@
 		"Image"		"vgui/blog/healing_gnome"
 	}
 
-	"community1" // special delivery
+	"community1"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"5"
 		"x360ctx"	"32"
 		"dlcmask"	"0x0000000000000002"
@@ -533,11 +500,10 @@
 	{
 
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"5"
 		"x360ctx"	"33"
 		"dlcmask"	"0x0000000000000002"
-		"hasdifficulty"		"1"
 		"builtin"	"1"
 		"Author"	"SR69MMJC and Karma Jockey"
 		"Image"		"vgui/blog/flu_season"
@@ -545,7 +511,6 @@
 		convar
 		{
 			"sb_max_team_melee_weapons" 1
-			"ai_talk_idle_enabled" 1
 			"sb_vomit_blind_time" 0.1
 			"boomer_vomit_delay" 0.1
 			"z_vomit_fade_duration" 0.1
@@ -564,7 +529,7 @@
 			"z_wandering_density" 0
 			"z_scout_mob_spawn_range" 1000
 			"director_no_mobs" 1
-			"z_health" 100	
+			"z_health" 100
 			"z_spawn_mobs_behind_chance" 0
 		}
 	}
@@ -586,15 +551,15 @@
 			z_jockey_health 500
 			z_jockey_speed 450
 			z_jockey_ride_damage 10
-                	z_jockey_ride_damage_delay 1.0
-                	z_jockey_ride_damage_interval 1.0
+			z_jockey_ride_damage_delay 1.0
+			z_jockey_ride_damage_interval 1.0
 		}
 	}
 
 	"community4"
 	{
 		"base"		"survival"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"5"
 		"x360ctx"	"35"
 		"dlcmask"	"0x0000000000000002"
@@ -610,10 +575,6 @@
 			"z_spitter_health" 300
 			"z_charger_allow_shove" 1
 			"director_no_mobs" 1
-			"z_special_spawn_interval" 10
-			"director_special_respawn_interval" 10
-			"director_special_initial_spawn_delay_min" 10
-			"director_special_initial_spawn_delay_max" 30
 			"sv_disable_glow_survivors" 1
 			"sv_disable_glow_faritems" 1
 			"intensity_decay_time" 15
@@ -628,12 +589,12 @@
 			"director_molotov_density" 7.48
 			"director_pistol_density" 6
 			"fog_override" 1
-			"fog_enable" 1
+			"fog_enable" 1	// to enforce default
 			"fog_start" 242
 			"fog_end" 730
 			"fog_startskybox" -10000
 			"fog_endskybox" -10000
-			"fog_enableskybox" 1
+			"fog_enableskybox" 1	// to enforce default
 			"z_tank_health" 5000
 			"z_tank_throw_force" 1200
 			"z_tank_throw_health" 200
@@ -643,19 +604,13 @@
 	"community5"
 	{
 		"base"		"coop"
-		"maxplayers"    "4"
+		"maxplayers"	"4"
 		"achievementindex"	"5"
 		"x360ctx"	"36"
 		"dlcmask"	"0x0000000000000002"
 		"builtin"	"1"
 		"Author"	"Rayman1103"
 		"Image"		"vgui/blog/deaths_door"
-		
-		"hasdifficulty"		"1"
-		convar
-		{
-			"survivor_max_incapacitated_count" 0
-		}
 	}
 
 	"community6"
@@ -686,14 +641,9 @@
 			"sv_force_time_of_day" 0
 			"z_ghost_delay_min" 20
 			"z_ghost_delay_max" 20
-			"director_vs_convert_pills" 0
-			"director_convert_pills" 0
-			"director_convert_pills_critical_health" 0
-			"director_convert_pills_to_defib_health" 0
 			"versus_tank_chance" 1
 			"versus_tank_chance_finale" 1
 			"versus_tank_chance_intro" 1
-			"versus_tank_flow_team_variation" 0
 			"versus_witch_chance" 0.75
 			"versus_witch_chance_finale" 0
 			"versus_witch_chance_intro" 0
